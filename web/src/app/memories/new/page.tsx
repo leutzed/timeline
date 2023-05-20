@@ -8,7 +8,7 @@ export default function NewMemory() {
         href="/"
         className="flex items-center gap-1 text-sm text-gray-200 transition-colors hover:text-gray-100"
       >
-        <ChevronLeft className="w-4x h-4" />
+        <ChevronLeft className="h-4 w-4" />
         go back to the timeline
       </Link>
 
@@ -18,10 +18,9 @@ export default function NewMemory() {
             htmlFor="media"
             className="flex cursor-pointer items-center gap-1.5 text-sm text-gray-200 transition-colors hover:text-gray-100"
           >
-            <Camera />
+            <Camera className="h-4 w-4" />
             Add media
           </label>
-
           <label
             htmlFor="isPublic"
             className="flex items-center gap-1.5 text-sm text-gray-200 transition-colors hover:text-gray-100"
@@ -35,15 +34,15 @@ export default function NewMemory() {
             />
             Public memory?
           </label>
-
-          <input type="file" id="media" className="invisible h-0 w-0" />
-
-          <textarea
-            name="content"
-            className="w-full flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400"
-            placeholder="Feel free to add photos, videos and more information about this experience that you want to remember forever"
-          />
         </div>
+
+        <input type="file" id="media" className="invisible h-0 w-0" />
+
+        <textarea
+          name="content"
+          className="w-full flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
+          placeholder="Feel free to add photos, videos and more information about this experience that you want to remember forever"
+        />
       </form>
     </div>
   )
