@@ -1,4 +1,11 @@
-import { Switch, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import {
+  ScrollView,
+  Switch,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native'
 import Icon from '@expo/vector-icons/Feather'
 
 import NLWLogo from '../src/assets/nlw-spacetime-logo.svg'
@@ -12,9 +19,9 @@ export default function NewMemory() {
   const [isPublic, setIsPublic] = useState(false)
 
   return (
-    <View
+    <ScrollView
       className="flex-1 px-8"
-      style={{ paddingBottom: bottom, paddingTop: top }}
+      contentContainerStyle={{ paddingBottom: bottom, paddingTop: top }}
     >
       <View className=" mt-4 flex-row items-center justify-between">
         <NLWLogo />
@@ -55,7 +62,14 @@ export default function NewMemory() {
           placeholder="Feel free to add photos, videos and more information about this experience that you want to remember forever"
           placeholderTextColor="#56565a"
         />
+
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="items-center self-end rounded-full bg-green-500 px-5 py-3"
+        >
+          <Text className="font-alt text-sm uppercase text-black">SAVE</Text>
+        </TouchableOpacity>
       </View>
-    </View>
+    </ScrollView>
   )
 }

@@ -40,12 +40,12 @@ export default function Layout() {
   }
 
   return (
-    <>
-      <ImageBackground
-        source={blurBG}
-        className="relative flex-1 bg-gray-900"
-        imageStyle={{ position: 'absolute', left: '-100%' }}
-      />
+    <ImageBackground
+      source={blurBG}
+      className="relative flex-1 bg-gray-900"
+      imageStyle={{ position: 'absolute', left: '-100%' }}
+    >
+      <StyledStripes className="absolute left-2" />
       <StatusBar style="light" translucent />
 
       <Stack
@@ -58,8 +58,6 @@ export default function Layout() {
         <Stack.Screen name="new" />
         <Stack.Screen name="memories" />
       </Stack>
-
-      <StyledStripes className="absolute left-2" />
-    </>
+    </ImageBackground>
   )
 }
