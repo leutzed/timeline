@@ -46,10 +46,10 @@ You can view the project layout through the links below:
 **Follow the steps below**
 
 ```bash
-# Install the dependencies
+# Install the dependencies in every folder
 $ yarn
 
-# Start the app
+# Start the app in every folder
 $ yarn start
 ```
 
