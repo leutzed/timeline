@@ -4,6 +4,9 @@
   timeline - Collect your journey moments and share (if you want) with the world!
 </h3>
 
+![png (1)](https://github.com/leutzed/timeline/assets/55982817/a5aa6a5b-7ff7-41a1-a724-d3b72659fc64)
+
+
 <p align="center">
   <a href="#-about-the-project">About the project</a> •
   <a href="#-layout">Layout</a> •
